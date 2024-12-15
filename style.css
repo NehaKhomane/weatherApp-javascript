@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Kalnia+Glaze:wght@100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Lato ;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 600px;
+    background: #006769;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+.container .title{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    place-content: center;
+}
+.container .title h2{
+    font-size: 23px;
+    color: white;
+    font-weight: 999;
+}
+.container .title h2::first-letter{
+    font-size: 26px;
+    font-weight: 999;
+}
+.container .city-field{
+    width: 80%;
+    margin: 5px auto;
+    color: white;
+}
+.container .input-field{
+    width: 100%;
+    padding: 5px 0px;
+    font-size:  16px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+}
+.container .input-field input{
+    width: 80%;
+    height: 20px;
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 5px;
+    font-size:  16px;
+
+}
+.container .input-field button{
+    background:rgb(3, 32, 32);
+    width: 20%;
+    margin-left: 2px;
+    border:  none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.container .info1{
+    width: 100%;
+    height: 100px;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .info1 .card,
+.container .info2 .card{
+    width: 170px;
+    height: 60px;
+    display:  flex;
+    color: white;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px 15px;
+    border: 3px 0px;
+    border-radius: 15px;
+    background: #48b6b8;
+}
+.container .info2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 7px;
+}
+.container .info1 .card p,
+.container .info2 .card p{
+    font-size: 18px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #d9e9e9;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.overlay .loader{
+    padding: 10px 15px;
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.overlay .loader span{
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    transition: all ease-in 0.4s;
+    background: #0e6061;
+}
+.overlay .loader span:nth-child(1){
+    animation: loading linear infinite 0.4s;
+}
+.overlay .loader span:nth-child(2){
+    animation: loading linear infinite 0.6s;
+}
+.overlay .loader span:nth-child(3){
+    animation: loading linear infinite 0.8s;
+}
+.overlay .loader span:nth-child(4){
+    animation: loading linear infinite 1s;
+}
+.overlay .loader span:nth-child(5){
+    animation: loading linear infinite 1.2s;
+}
+.overlay .loader span:nth-child(6){
+    animation: loading linear infinite 1.4s;
+}
+.overlay .loader span:nth-child(7){
+    animation: loading linear infinite 1.6s;
+}
+@keyframes loading{
+    100%{
+        background: #eaeaea;
+    }
+}
+
